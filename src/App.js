@@ -48,7 +48,7 @@ function App() {
 
     // 3- wrap the call to the server in try & catch block
     try {
-      await http.delete(`s${config.apiEndpoint}/${post.id}`);
+      await http.delete(`${config.apiEndpoint}/${post.id}`);
       // throw new Error("");
     } catch (err) {
       if (err.response && err.response.status === 404)
