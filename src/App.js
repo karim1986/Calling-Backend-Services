@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   const handleAdd = async () => {
-    const obj = { title: "a", body: "b" };
+    const obj = { title: "Added", body: "b" };
     const { data: post } = await http.post(config.apiEndpoint, obj);
 
     const addPosts = [post, ...posts];
